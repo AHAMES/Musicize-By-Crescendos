@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+html {
+  height: 100%;
+}
+.Button{
+    
+    background-color: #9d0b0e !important;
+    
+}
+.PhotoGallery{ max-height: 200px;
+    margin-bottom: em;
+overflow: hidden;}
+.Button: Hover{
+    background-color: #090909 !important
+}
+.ContentText{
+    text-align:justify;
+}
+span {
+    font-size: 0.8em;
+}
+hr.new1 {
+  border: 0;
+  height: 0;
+  width: 70%;
+  margin-top: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.body {
+  min-height: calc(100vh - 0px);
+  display: flex;
+  flex-direction: column;
+  background-image: url("./Resources/MenuCover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #090909;
+}
+
+.navbar {
+  background-color: #9d0b0e;
+  font-family: "Oswald", sans-serif;
+  font-size: 120%;
+  color: white;
+}
+
+.cardImage {
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cardContainer {
+}
+.cardContainer :hover {
+    
+  transform: translate(0, 10px);
+  transition: transform 0.2s ease-out;
+    
+}
+.card-title {
+  pointer-events: none;
+}
+.SearchFilter{
+    
+    vertical-align:middle;
+    align-content: center;
+    padding:1%;
+    padding-top: 2%;
+}
+.card {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+a {
+  text-decoration: none !important;
+}
+.card :hover .highlighted {
+  opacity: 1;
+  pointer-events: none;
+  transition-duration: 0.4s;
+}
+.noHover {
+  pointer-events: none;
+  color: black;
+}
+.highlighted {
+  background-color: #9d0b0e;
+  padding: 4px 10px 4px 10px;
+  color: white;
+  opacity: 0.7;
+}
+.nav-item {
+  background-color: #9d0b0e;
+  padding: 0 1em 0 1em;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  color: #090909;
+}
+.nav-item input {
+  font-size: 0.9em;
+  width: 15em;
+  height: 80%;
+  margin-top: 0.3em;
+}
+.nav-link {
+  color: White;
+}
+
+.navbar-brand {
+  color: White;
+}
+.content {
+  /* this one wraps content between the navbar and the footer*/
+  flex: 1;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.wrapperGrid {
+  /* this allows the grid distribution for the cards*/
+  display: grid;
+
+  /* Change x for repeat(x,1fr) to increase the number of columns at will*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.4em;
+}
+.profilePicture {
+  width: 200px;
+  height: 180px;
+  border-radius: 70%;
+  border: solid;
+  border-color: #090909;
+  border-width: 0.5em;
+  margin: 0 0.5em 0 0.5em;
+}
+
+.profileGrid {
+  position: absolute;
+
+  width: 100%;
+}
+p {
+  padding: 1em 0 1em 0;
+}
+.profileGrid2 {
+  transform: translate(0%, 109%);
+  background-color: #9d0b0e;
+  position: absolute;
+  display: grid;
+  border-left: 0.7em solid #090909;
+  border-top: 0.7em solid #9d0b0e;
+
+  grid-template-columns: 1fr 2fr;
+}
+.gallery {
+  padding-top: 2em;
+  margin: 10px 0 10px 0;
+}
+.stageName {
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+  padding: 2px 55px 2px 10px;
+  background-color: #9d0b0e;
+  font-family: "Oswald", sans-serif;
+}
+
+.ratePerHour {
+  color: white;
+  margin: 10px 10px 30px 10px;
+}
+
+.wrapperFlex {
+  /* experimental, used to provide space next to the grid in the main page, could be used for any extension*/
+  display: inline-flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+  border-top: 1em solid #9d0b0e;
+}
+
+.profileFlex {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  widows: 100%;
+  z-index: 3;
+  border-top: 1em solid #9d0b0e;
+}
+
+/* all these boxes should be applied individually for each page in seperatly instead of putting them here*/
+.box1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 0.5em solid #9d0b0e;
+
+  /* a flexbox component, this takes 3/4 of the box*/
+}
+
+.box2 {
+  /* a flexbox component, this takes 1/4 of the box*/
+  position: relative;
+  width: 100%;
+  height: 25em;
+  overflow: hidden;
+  border-bottom: 0.5em solid #9d0b0e;
+}
+.LogoImg {
+  width: 15em;
+}
+.ml-auto {
+  background-color: #9d0b0e;
+}
+
+.MainLogo {
+  position: absolute;
+
+  z-index: 2;
+  max-height: 60%;
+  margin: 5% auto 5% auto;
+  left: 30%;
+  top: 1em;
+}
+.container-fluid2 {
+  position: relative;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.SliderImg {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-indicators li {
+  margin: 30px;
+}
+
+/*  Footer Stuff */
+.Footer {
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-image: url("./Resources/MenuCover.jpg");
+  background-size: cover;
+  padding: 15px 0px 0px 0px;
+  background-attachment: inherit;
+}
+.coverImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.SMicons {
+  width: 300px;
+  height: 60px;
+  display: flex;
+  position: relative;
+  z-index: 10000;
+  top: 27;
+}
+.SMicons img {
+  width: 50px;
+}
+#fb,
+#tw,
+#insta {
+  width: 55px;
+  height: 55px;
+  margin: 4px;
+}
+
+#fb {
+  background-size: contain;
+}
+#tw {
+  background-size: contain;
+}
+#insta {
+  background-size: contain;
+}
+#Mail {
+  color: white;
+  text-decoration: none;
+}
+
+#Mail:hover {
+  color: rgba(224, 57, 42, 1);
+}
+table {
+  width: 50%;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  margin: 1em auto 3em auto;
+}
+
+table a {
+  color: gainsboro;
+  text-decoration: none;
+}
+table a:hover {
+  color: rgba(224, 57, 42, 1);
+  text-decoration: underline;
+}
+h4 {
+  padding-bottom: 5px;
+}
+table h4 {
+  color: #9d0b0e;
+  padding-right: 0;
+  margin: 0 0 0.4em 0;
+}
+
+  .button2 {
+     transform: translate(30%, -20px);
+    color: #FFF;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+      background: black;
+    width: 200px;
+  height: 50px;
+    position: absolute;
+  margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      padding: 5px;
+  }
